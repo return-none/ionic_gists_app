@@ -1,6 +1,11 @@
 Ionic Gists App
 =====================
 
+# Pre-running global npm dependencies
+
+1. jade
+2. coffeescript
+
 # Running
 
 1. `npm install`
