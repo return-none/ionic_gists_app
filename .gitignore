@@ -1,1 +1,5 @@
 node_modules/
+www/css/*
+www/js/*
+www/partials/*
+www/index.html

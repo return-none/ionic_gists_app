@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width')
+    title Gists App
+    link(rel='stylesheet', href='lib/ionic/css/ionic.css')
+    link(rel='stylesheet', href='css/style.css')
+
+    script(src="lib/ionic/js/ionic.bundle.js")
+    script(src="cordova.js")
+    script(src="js/app.js")
+
+  body(ng-app="GistApp")
+    ion-nav-bar
+    ion-nav-view(animation="slide-left-right")
