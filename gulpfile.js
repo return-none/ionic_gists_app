@@ -15,7 +15,7 @@ var paths = {
   coffee: ['./coffee/**/*.coffee']
 };
 
-gulp.task('default', ['sass', 'jade']);
+gulp.task('default', ['sass', 'jade', 'coffee']);
 
 gulp.task('sass', function(done) {
   gulp.src('./scss/ionic.app.scss')
