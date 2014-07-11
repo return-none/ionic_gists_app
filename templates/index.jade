@@ -8,9 +8,11 @@ html(lang="en")
     link(rel='stylesheet', href='css/style.css')
 
     script(src="lib/ionic/js/ionic.bundle.js")
+    script(src="lib/ionic/js/angular/angular-resource.js")
     script(src="cordova.js")
     script(src="js/app.js")
 
   body(ng-app="GistApp")
     ion-nav-bar
+        ion-nav-back-button(class="button-icon ion-arrow-left-c")
     ion-nav-view(animation="slide-left-right")

@@ -1,0 +1,14 @@
+ion-view(title="Gist View")
+  ion-content
+    .list.card
+        .item.item-avatar
+            img(ng-src="{{gist.owner.avatar_url}}")
+            h2 {{gist.owner.login}}
+            p {{gist.created_at | date: 'short'}}
+        .item.item-body(ng-repeat="(f_name, code) in gist.files")
+            {{f_name}}
+            textarea(ng-model="code.content", rows=10)
+        .item.tabs.tabs-secondary.tabs-icon-left
+            a.tab-item(ng-click="save()")
+                i.icon.ion-thumbsup
+                | Save
